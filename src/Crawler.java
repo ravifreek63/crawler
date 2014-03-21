@@ -106,8 +106,9 @@ public class Crawler {
 	public static void main(String[] args) throws SQLException, MalformedURLException, IOException  {
 		int count = 0;
     	Crawler crawler = new Crawler();
-    	crawler.globalURls.add("http://www.princeton.edu");
-    	while (true && count < 1){
+    	crawler.globalURls.add("http://www.homeshop18.com/");
+    	crawler.globalURls.add("http://www.myntra.com/");
+    	while (true && count < 100){
     		for (String url : crawler.globalURls){
     			crawler.parseDocument(url);
     			count++;
