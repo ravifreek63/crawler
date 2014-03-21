@@ -108,7 +108,8 @@ public class Crawler {
     	Crawler crawler = new Crawler();
     	crawler.globalURls.add("http://www.homeshop18.com/");
     	crawler.globalURls.add("http://www.myntra.com/");
-    	while (true && count < 100){
+    	crawler.globalURls.add("http://www.watchkart.com/");
+    	while (true && count < 1000){
     		for (String url : crawler.globalURls){
     			crawler.parseDocument(url);
     			count++;
